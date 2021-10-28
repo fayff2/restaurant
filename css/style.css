@@ -1,0 +1,266 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap');
+font-family: 'Henny Penny', cursive;
+font-family: 'Open Sans', sans-serif;header-content span
+font-family: 'Montserrat', sans-serif; header-content p
+*/
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../images/food.jpeg);
+  height: 100vh;
+  background-image: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.container {
+  min-width: 80%;
+  margin: 0 5%;
+  padding-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-2 {
+  flex-basis: 50%;
+}
+
+.header .logo h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Henny Penny', cursive;
+}
+
+.header .logo span {
+  color: rgb(134, 201, 221);
+}
+
+.header .login-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Henny Penny', cursive;
+}
+
+.header .login-btn:hover a {
+  background:rgb(134, 201, 221);
+}
+
+.header .login-btn a {
+  text-decoration: none;
+  border: 2px solid rgb(134, 201, 221);
+  border-radius: 30px;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: all .8s ease-in-out;
+}
+
+/* container header--------------- */
+
+.header-container{
+  width:80%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+  top:25px;
+  position:relative;
+}
+
+.header-content{
+  text-align:center;
+  color:#fff;
+ 
+}
+
+.header-content h1{
+  font-family: 'Henny Penny', cursive;
+  font-size:4rem;
+  text-transform: capitalize;
+}
+.header-content span{
+  font-family: 'Open Sans', sans-serif;
+  color:rgb(134, 201, 221);
+  
+  
+}
+
+.header-content p{
+  line-height:1.6;
+  letter-spacing:2px;
+  font-style:italic;
+  font-size:1.2rem;
+}
+.header-food{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  column-gap:5px;
+  margin-top:40px;
+
+}
+.header-food .img-box {
+  overflow:hidden;
+  margin:10px 0;
+}
+.header-food .img-box img{
+  border:1px solid rgb(134, 201, 221);
+  transition:all .8s ease-in-out;
+}
+
+.header-food .img-box img:hover{
+  transform:scale(1.2);
+  cursor:pointer;
+}
+
+
+/* ============================
+   ======== Media Query======== 
+   ============================*/
+ 
+
+/*MEDIA QUERY  >1200px---------*/
+@media (min-width:1201px){
+  
+  .header-food{
+    margin-top:10px;
+  }
+}
+
+/*MEDIA QUERY 993px To 1200px---------*/
+@media (min-width:993px) and (max-width:1200px){
+  .header-content h1{
+    font-size:3rem;
+   }
+
+   .header-food{
+    margin-top:40px;
+  }
+}   
+/*MEDIA QUERY 769px To 992px---------*/
+@media (min-width:769px) and (max-width:992px){
+  .header-content{
+    margin-top:50px;
+  }
+  .header-content h1{
+    font-size:4rem;
+   }
+ 
+  .header-food{
+    display:flex;
+    flex-direction:column;
+    margin-top:240px;
+  }
+
+}
+
+/*MEDIA QUERY 577px To 768px---------*/
+@media (min-width:577px) and (max-width:768px){
+ 
+  .header{
+    height:90vh;
+  }
+  .header-content{
+    margin-top:40px;
+  }
+  .header-content h1{
+   font-size:3rem;
+  }
+  .header-food{
+    display:flex;
+    flex-direction:column;
+    margin-top:250px;
+  }
+}
+
+/*MEDIA QUERY 576px-----------------*/
+@media (min-width:481px) and (max-width:576px){
+  .header{
+    height:80vh;
+  }
+  .header .logo h1{
+    font-size:1.5rem;
+  }
+  .header .login-btn{
+    font-size:1.5rem;
+  }
+  .header .login-btn a {
+  width: 80px;
+  height: 40px;
+  line-height:40px;
+  text-align: center;
+  font-size: 1.3rem;
+  
+}
+  .header-content{
+    min-width:350px;
+    margin-top:50px;
+  }
+  .header-content h1{
+   font-size:2.5rem;
+  }
+  .header-content p{
+   font-size:.8rem;
+  }
+  .header-food{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    margin-top:160px;
+  }
+
+}
+
+/*MEDIA QUERY 480px-----------------*/
+@media (max-width:480px){
+  .header{
+    height:60vh;
+  }
+  .header .logo h1{
+    font-size:1.2rem;
+  }
+  .header .login-btn{
+    font-size:1.2rem;
+  }
+  .header .login-btn a {
+    width: 80px;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    font-size: 1.3rem;
+    
+  }
+  .header-content{
+    margin-top:40px;
+  }
+  .header-content h1{
+    font-size:1.2rem;
+   }
+  .header-food{
+    flex-direction:column;
+    margin-top:150px;
+  }
+}
